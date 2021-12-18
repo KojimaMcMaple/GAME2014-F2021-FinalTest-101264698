@@ -2,12 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Source file Name: ShrinkingPlatformController.cs
+/// Student Name: Trung Le 
+/// StudentID: 101264698 
+/// Date last Modified: 2021-12-18
+/// Program description: a Floating Platform that Shrinks over
+/// time, When the player’s character lands on the Floating Platform it will activate and begin to
+/// shrink over time. If the Floating Platform has been activated (and reduced in width), and the player’s
+/// character is not on the Floating Platform it will reset to its original size over time.
+/// </summary>
 public class ShrinkingPlatformController : MonoBehaviour
 {
-    public float bop_amount = 1.0f;
-    public float bop_speed = 1.0f;
-    public float shrink_speed = 0.9f;
-    public float reset_speed = 0.4f;
+    public float bop_amount = 1.0f; //pingpong amount 
+    public float bop_speed = 1.0f; //pingpong speed
+    public float shrink_speed = 0.9f; //how fast the platform should shrink
+    public float reset_speed = 0.4f; //how fast the platform should reset its size
     private Vector2 start_pos_;
     private Vector3 start_scale_;
     private bool is_shrinking_ = false;
