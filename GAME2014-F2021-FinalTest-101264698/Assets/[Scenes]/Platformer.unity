@@ -3935,7 +3935,7 @@ GameObject:
   - component: {fileID: 479035389}
   m_Layer: 8
   m_Name: ShrinkingPlatform
-  m_TagString: Moving Platform
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4094,6 +4094,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e74bac6e72a7b46b9c106189c6b83e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bop_amount: 1
+  shrink_speed: 1
+  shrink_time: 2
+  reset_time: 2
+  shrink_sfx: {fileID: 8300000, guid: f60bc0f04b6cc7e4eb4e4329b5e26beb, type: 3}
+  reset_sfx: {fileID: 8300000, guid: 5101ad92d5734da48b1489978de20c2c, type: 3}
 --- !u!1 &514371418
 GameObject:
   m_ObjectHideFlags: 0
